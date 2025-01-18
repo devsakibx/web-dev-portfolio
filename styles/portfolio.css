@@ -169,3 +169,77 @@ main section {
 .skill-description {
     color: #757575;
 }
+
+/* resume section style */
+.resume-container {
+    display: flex;
+    gap: 24px;
+}
+
+.experience-description {
+    color: #757575;
+}
+
+.experience-sub-title {
+    color: #757575;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px auto;
+}
+
+.btn-primary {
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+/* footer section styles */
+footer {
+    padding: 130px;
+    display: flex;
+    gap: 100px;
+}
+
+.footer-column {
+    width: 50%;
+}
+
+footer input[type="text"],
+footer input[type="email"],
+footer textarea {
+    height: 65px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: white;
+    display: block;
+    padding: 10px 20px;
+    margin-bottom: 24px;
+    border: none;
+
+}
+
+.hide{
+    display: none;
+}
+
+@media screen and (max-width: 576px) {
+    .skills-container, .resume-container, footer, .about-items{
+        flex-direction: column;
+    }
+    footer, .about{
+        padding: 20px;
+    }
+    .footer-column{
+        width: 100%;
+    }
+    footer input[type="text"],
+footer input[type="email"],
+footer textarea{
+    width: calc((100% - 40px)/2);
+}
+}
+
+/* @media screen and (max-width: 576px) {
+    .skills-container{
+        background-color: red;
+    }
+} */
